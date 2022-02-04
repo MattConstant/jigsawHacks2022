@@ -11,4 +11,9 @@ public class HomeController {
 		return "home.html";
 	}
 	
+	@GetMapping("/scores")
+	public String scores() {
+		return "scoreBoard.html";
+	}
+	
 }
