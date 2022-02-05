@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>High scores</title>
+</head>
+<body>
+
+<a href="/">Home</a>
+
+
+<table border="1">
+
+<tr>
+
+
+<th>Name</th>
+<th>Score</th>
+
+
+
+</tr>
+
+<tr th:each="score : ${myScores}">
+<td th:text=${score.name}> </td>
+<td th:text=${score.score}> </td>
+
+</tr>
+</table>
+
+</body>
+</html>
